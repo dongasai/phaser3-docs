@@ -3062,11 +3062,12 @@ is called. It can also be emitted if a new animation is started before the curre
     
     <div class="description">
         <p>动画更新事件。</p>
-<p>这个事件是由 Sprite 在播放更新时发出的。 当动画框架改变时发生这种情况。
+<p>这个事件是由 Sprite 在播放更新时发出的。 This happens when the animation changes frame.
 一个动画将基于frme率和其他因素改变帧，如<code>timeScale</code> 和 <code>delay</code>。 它也可以在停止或重新启动时更改帧。</p>
 <p>使用 <code>sprite.on('animationupdate', listener)</code> 在Sprite 上监听它</p>
 <p>如果动画播放速度快于游戏帧速率， 它完全可以在单个游戏帧内释放几个
-更新事件，所以请在你的代码中了解这一点。 <strong>final</strong> 事件收到的框架是呈现给游戏的事件。</p>
+更新事件，所以请在你的代码中了解这一点。 The <strong>final</strong> event received that frame
+is the one that is rendered to the game.</p>
 <p>动画事件流量如下：</p>
 <ol>
 <li><code>ANIMATION_START</code></li>
